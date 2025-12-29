@@ -2,7 +2,7 @@ full_dot = '●'
 empty_dot = '○'
 
 def create_character(name, strength, intelligence, charisma):
-    if type(name) != str:
+    if not isinstance(name,str):
         return "The character name should be a string"
     if len(name) > 10:
         return "The character name is too long"
